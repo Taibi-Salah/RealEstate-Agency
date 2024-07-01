@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {# FAVICONS #}
+        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+        {# GOOGLE FONTS #}
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+
+            {# VENDOR CSS FILES #}
+            <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+            <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+            <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+            {# TEMPLATE MAIN CSS FILE #}
+            <link href="assets/css/style.css" rel="stylesheet">
+        {% endblock %}
+
+    </head>
+    <body>
+
+        {# PROPERTY SEARCH SECTION #}
+        {{ include('layouts/partials/_property_search_section.html.twig') }}
+
+        {# NAV BAR SECTION #}
+        {{ include('layouts/partials/_nav.html.twig') }}
+
+        {% block body %}
+        
+        
+        {% endblock %}
+
+        {# FOOTER SECTION #}
+        {{ include('layouts/partials/_footer.html.twig') }}
+
+        {# BACK TO TOP OPTION #}
+        {{ include('layouts/partials/_back_to_top.html.twig') }}
+
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+
+            {# VENDOR JS FILES #}
+            <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+            <script src="assets/vendor/php-email-form/validate.js"></script>
+
+            {# TEMPLATE MAIN JS FILE #}
+            <script src="assets/js/main.js"></script>
+
+        {% endblock %}
+    </body>
+</html>

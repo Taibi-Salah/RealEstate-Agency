@@ -1,0 +1,19 @@
+{% extends 'layouts/base.html.twig' %}
+
+{% block title %} Agence Immobilière - Acceuil {% endblock %}
+
+{% block body %}
+
+    {# INTRO SECTION #}
+    {{ include('home/partials/_intro_section.html.twig') }}
+
+    <main id="main">
+        {# Services Section #}
+        {{ include('home/partials/_services_section.html.twig') }}
+
+        {# LAST PROPERTY SECTION #}
+        {{ include('home/partials/_last_property.html.twig') }}
+
+    </main>
+
+{% endblock %}

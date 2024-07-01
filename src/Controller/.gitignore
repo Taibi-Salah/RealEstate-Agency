@@ -1,0 +1,12 @@
+# Ignore all .env files
+.env
+
+# Ignore specific config files
+config/routes.yml
+config/services.yml
+bundles.php
+preload.php
+
+# Ignore directories
+logs/
+tmp/
